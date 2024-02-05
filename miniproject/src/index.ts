@@ -13,4 +13,10 @@ class Player {
     return this.last;
   }
 }
-const james = new Player("James", "Ronald");
+// const james = new Player("James", "Ronald");
+function getRandom<T>(input: T[]): T {
+  const idx = Math.floor(Math.random() * input.length);
+  return input[idx];
+}
+const arr = [1, 2, 3, 4, 5, 6];
+getRandom<number>(arr);
